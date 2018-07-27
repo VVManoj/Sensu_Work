@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'ls'
+                sh 'date'
+                
+            }
+        }
+         stage('postbuild') {
+            steps {
+                
+                sh 'pwd'
+                
+            }
+        }
+    }
+}
